@@ -2,7 +2,7 @@
 
 var newsletterSignup = document.getElementById('newsletter-signup');
 var newsletterOk = document.getElementById('newsletter-ok');
-var emailRegex = /^\S+@\S+\.\S+$/;
+var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 var newsletterX = document.getElementById('input-icon');
 
 newsletterSignup.addEventListener('input', function(){
