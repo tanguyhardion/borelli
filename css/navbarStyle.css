@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+#logo{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    text-decoration: none;
+    color: white;
+}
+    
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 6%;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+nav input[type=checkbox], nav .fa{
+    display: none;
+}
+
+.main-nav{
+    box-shadow: white;
+}
+
+.nav-bar{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    transition: 0.4s;
+    border-radius: 12px;
+    border: 1px solid transparent;
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-bar a:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 0;
+    bottom: -5px;
+    background: #ccac7c;
+    height: 2px;
+    transition-property: width;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;
+}
+
+.nav-bar a:hover:after, .nav-bar a:focus:after, .nav-bar a:active:after{
+    left: 0;
+    right: auto;
+    width: 100%;
+}
+
+@media(max-width: 800px){
+    .text-header h1{
+        font-size: 25px;
+    }
+    nav .open{
+        transform: rotateZ(90deg);
+        transition: 0.7s;
+    }
+    nav .fa{
+        display: block;
+        color: white;
+        margin: 10px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 0.7s;
+    }
+    .nav-bar{
+        position: absolute;
+        background: black;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        transition: 0.7s;
+    }
+    .nav-bar ul li{
+        display: block;
+    }
+    .nav-bar ul{
+        margin-top: 20%;
+        padding: 5px;
+    }
+    .nav-bar a{
+        border-radius: 5px;
+        padding: 10px;
+    }
+    .nav-bar a:after{
+        height: 0;
+    }
+    .nav-bar a:active{
+        background-color: #ccac7c;
+    }
+    .logo{
+        margin: auto;
+        text-align: center;
+    }
+}

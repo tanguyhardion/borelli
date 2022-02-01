@@ -1,0 +1,93 @@
+.header{ 
+    background: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(../images/background.jpg) no-repeat center; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.text-header{
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-header h1{
+    font-size: 62px;
+    font-family: 'Lora', serif;
+}
+
+.text-header p{
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Lora', serif;
+}
+
+#discover-btn{
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Lora', serif;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 24px;
+    font-size: 15px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    transition: 1s;
+}
+
+#discover-btn:hover{
+    border: 1px solid #a9957b;
+    background: #a9957b;
+    transition: 1s;
+}
+
+.content{
+    display: flex;
+    background-color: black;
+    justify-content: space-evenly;
+}
+
+.accordion{
+    width: 80%;
+    margin: auto;
+    flex-basis: 40%;
+    padding: 100px 12px;
+    box-sizing: border-box;
+}
+
+.accordion h1, p{
+    font-family: 'Lora', serif;
+    color: white;
+}
+
+.accordion h1{
+    font-size: 40px;
+    text-align: center;
+}
+
+.accordion p{
+    font-size: 15px;
+    line-height: 27px;
+    text-align: justify;
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.accordion img{
+    border-radius: 15%;
+    max-width: 100%;
+}
+
+@media(max-width: 1047px){
+    .content{
+        flex-direction: column;
+        text-align: center;
+    }
+}
