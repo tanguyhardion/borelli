@@ -3,7 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <title>Borelli Accordéons</title>
+        <title>Accueil - Borelli Accordéons</title>
         <link rel="icon" href="images/accordion.png">
         <link rel="stylesheet" href="css/homeStyle.css">
         <link rel="stylesheet" href="css/navbarStyle.css">
