@@ -53,15 +53,11 @@
     background-color: black;
 }
 
-#first-content{
-    padding-top: 60px;
-}
-
 .accordion{
     width: 80%;
     margin: auto;
     flex-basis: 40%;
-    padding: 60px 12px;
+    padding: 100px 12px;
     box-sizing: border-box;
 }
 

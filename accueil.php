@@ -38,11 +38,11 @@
 
         <section class="content">
             <div class="accordion" data-aos="fade-in" data-aos-once="true" data-aos-duration="800">
-                <img src="images/chambord.png" alt="chambord_img">
-            </div>
-            <div class="accordion" data-aos="fade-in" data-aos-once="true" data-aos-duration="800">
                 <h1>Chambord</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam explicabo commodi, rerum architecto eveniet pariatur alias, consectetur, repellat necessitatibus natus officiis sint ipsum rem officia voluptates! Molestiae placeat blanditiis, veritatis aperiam nulla doloribus ipsam atque veniam id voluptatum? Officiis voluptatum culpa excepturi deserunt doloribus ut, veritatis sapiente dolorum, sequi velit libero aspernatur quasi esse quaerat aliquid odio. Voluptates fugiat odit earum vitae. Qui, temporibus quam placeat corporis voluptates saepe, doloremque iste aliquid eaque, libero id voluptate. Expedita similique doloremque sit modi ad explicabo, consequuntur quia possimus veniam consectetur voluptatem ratione ab nemo fugiat quo quod voluptatum illum exercitationem! Distinctio, fugit.</p>
+            </div>
+            <div class="accordion" data-aos="fade-in" data-aos-once="true" data-aos-duration="800">
+                <img src="images/chambord.png" alt="chambord_img">
             </div>
         </section>
 
