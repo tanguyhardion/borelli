@@ -60,22 +60,24 @@ footer ul{
 }
 
 .fcolumn .follow a{
+    position: relative;
     display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
-    margin: 0 10px 10px 0;
+    width: 42px;
+    height: 42px;
     text-align: center;
-    line-height: 40px;
+    line-height: 42px;
+    background: #171515;
     border-radius: 50%;
-    color: white;
-    cursor: pointer;
-    transition: all 0.5s ease;
+    font-size: 21px;
+    color: #808080;
+    transition: 0.5s;
+    margin-right: 5px;
 }
 
 .fcolumn .follow a:hover{
-    color: black;
-    background-color: #ccac7c;
+    color: #ccac7c;
+    box-shadow: 0 0 15px #ccac7c;
+    text-shadow: 0 0 15px #ccac7c;
 }
 
 .fcolumn input{
@@ -89,13 +91,13 @@ footer ul{
     border-radius: 12px;
     font-family: 'Lora', serif;
     outline: none;
-    transition: 0.1s;
+    transition: 0.2s;
 }
 
 .fcolumn input[type=email]:focus{
     border-color: #ccac7c;
-    transition: 0.3s;
-    border-width: 5px;
+    transition: 0.2s;
+    border-width: 4px;
     margin: -2px;
 }
 
@@ -103,20 +105,15 @@ footer ul{
     position: absolute;
     padding: 8px;
     margin-left: 170px;
-    color: red;
+    color: rgba(255, 0, 0, 0.8);
     display: none;
 }
 
 #newsletter-ok{
     margin-left: 15px;
     padding: 5px;
-    border-color: #ccac7c;
     border-radius: 12px;
     display: none;
-}
-
-#newsletter-ok:hover{
-    border-width: 5px;
 }
 
 #copyright{

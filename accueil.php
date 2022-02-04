@@ -27,22 +27,24 @@
         </header>
 
         <section class="content" id="first-content">
-            <div class="accordion" data-aos="fade-in" data-aos-once="true" data-aos-duration="800">
-                <img src="images/caprice.png" alt="caprice_img">
+            <div class="accordion" data-aos="fade-in" data-aos-once="true">
+                <img src="images/caprice.jpg" alt="caprice_img">
             </div>
-            <div class="accordion" data-aos="fade-in" data-aos-once="true" data-aos-duration="800">
+            <div class="accordion" data-aos="fade-in" data-aos-once="true">
                 <h1>Caprice</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, expedita error porro voluptas aut harum, officiis rem obcaecati, eos voluptatem iure beatae possimus. Soluta eaque facilis excepturi suscipit aspernatur. Perspiciatis necessitatibus facilis ea amet molestias illum reprehenderit officia doloremque, ab aperiam error quasi velit officiis! Ratione voluptatum eveniet qui culpa sit fugiat a corporis voluptatem? Explicabo, ut vel sint tempora natus soluta temporibus suscipit asperiores quisquam inventore porro quam, doloribus amet tenetur modi rem dicta hic? Quasi placeat vitae distinctio expedita, voluptatibus accusamus, commodi minima sit repellendus, eaque non veritatis. Natus iusto libero earum atque officiis quos molestiae voluptates corrupti.</p>
             </div>
         </section>
 
         <section class="content">
-            <div class="accordion" data-aos="fade-in" data-aos-once="true" data-aos-duration="800">
-                <h1>Chambord</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam explicabo commodi, rerum architecto eveniet pariatur alias, consectetur, repellat necessitatibus natus officiis sint ipsum rem officia voluptates! Molestiae placeat blanditiis, veritatis aperiam nulla doloribus ipsam atque veniam id voluptatum? Officiis voluptatum culpa excepturi deserunt doloribus ut, veritatis sapiente dolorum, sequi velit libero aspernatur quasi esse quaerat aliquid odio. Voluptates fugiat odit earum vitae. Qui, temporibus quam placeat corporis voluptates saepe, doloremque iste aliquid eaque, libero id voluptate. Expedita similique doloremque sit modi ad explicabo, consequuntur quia possimus veniam consectetur voluptatem ratione ab nemo fugiat quo quod voluptatum illum exercitationem! Distinctio, fugit.</p>
+            <div class="accordion" data-aos="fade-in" data-aos-once="true">
+                <img src="images/chambord.jpg" alt="chambord_img">
             </div>
-            <div class="accordion" data-aos="fade-in" data-aos-once="true" data-aos-duration="800">
-                <img src="images/chambord.png" alt="chambord_img">
+            <div class="accordion" data-aos="fade-in" data-aos-once="true">
+                <div class="accordion-text">
+                    <h1>Chambord</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam explicabo commodi, rerum architecto eveniet pariatur alias, consectetur, repellat necessitatibus natus officiis sint ipsum rem officia voluptates! Molestiae placeat blanditiis, veritatis aperiam nulla doloribus ipsam atque veniam id voluptatum? Officiis voluptatum culpa excepturi deserunt doloribus ut, veritatis sapiente dolorum, sequi velit libero aspernatur quasi esse quaerat aliquid odio. Voluptates fugiat odit earum vitae. Qui, temporibus quam placeat corporis voluptates saepe, doloremque iste aliquid eaque, libero id voluptate. Expedita similique doloremque sit modi ad explicabo, consequuntur quia possimus veniam consectetur voluptatem ratione ab nemo fugiat quo quod voluptatum illum exercitationem! Distinctio, fugit.</p>
+                </div>
             </div>
         </section>
 
