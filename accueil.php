@@ -51,6 +51,7 @@
         <?php include_once("footer.php")?>
 
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script type="text/javascript" src="js/discover.js"></script>
         <script type="text/javascript" src="js/menu.js"></script>
         <script type="text/javascript" src="js/scrolling.js"></script>
         <script type="text/javascript" src="js/validation.js"></script>

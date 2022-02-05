@@ -7,7 +7,7 @@
                 <li><a href="accueil">Accueil</a></li>
                 <li><a href="nos-produits">Produits</a></li>
                 <li><a href="qui-sommes-nous">Qui sommes-nous</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="nous-contacter">Contact</a></li>
             </ul>
         </div>
     

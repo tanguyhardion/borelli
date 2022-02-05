@@ -118,7 +118,7 @@ nav input[type=checkbox], nav .fa{
     .nav-bar a:active{
         background-color: #ccac7c;
     }
-    .logo{
+    #logo{
         margin: auto;
         text-align: center;
     }
