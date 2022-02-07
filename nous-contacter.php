@@ -77,6 +77,9 @@
                             <textarea name="" cols="30" rows="10" required></textarea>
                             <span>Message</span>
                         </div>
+                        <div class="input-box">
+                        <input type="submit" name="">
+                        </div>
                     </form>
                 </div>
             </div>

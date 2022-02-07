@@ -112,7 +112,7 @@ body{
     font-size: 14px;
     margin: 10px 0;
     border: none;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #ccac7c;
     outline: none;
     resize: none;
 }
@@ -120,28 +120,42 @@ body{
 .contact-form .input-box span{
     position: absolute;
     left: 0;
-    padding: 5px 0;
+    padding: 14px 0;
     font-size: 16px;
     pointer-events: none;
     transition: 0.5s;
-    color: green;
-
+    color: darkgrey;
 }
 
 .contact-form .input-box input:focus ~ span,
-.contact-form .input-box input:valid ~ span,
+.contact-form .input-box input[type="text"]:valid ~ span,
+.contact-form .input-box input[value] ~ span,
 .contact-form .input-box textarea:focus ~ span,
 .contact-form .input-box textarea:valid ~ span{
-    color: blue;
     font-size: 12px;
     transform: translateY(-20px);
 }
 
 .contact-form .input-box input[type=submit]{
     width: 100%;
-    background: blueviolet;
+    background: #ccac7c;
     border: none;
     cursor: pointer;
     padding: 10px;
     font-size: 16px;
+}
+
+@media(max-width: 800px){
+    .contact{
+        padding: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .container .contact-info{
+        margin-bottom: 40px;
+    }
+    .container .contact-info, .contact-form{
+        width: 100%;
+    }
 }
