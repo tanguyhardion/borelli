@@ -14,148 +14,219 @@
 
 body{
     font-family: 'Lora', serif;
-    color: white;
 }
 
-.contact{
-    position: relative;
-    min-height: 100vh;
-    padding: 50px 100px;
+section{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    min-height: 100vh;
     background: black;
 }
 
-.contact .content{
-    max-width: 800px;
-    text-align: center;
-    
-}
-
-.contact .content h2{
-    font-size: 32px;
-    font-weight: 500;
-}
-
-.contact .content p{
-    font-weight: 300;
-}
-
-.container{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.container .contact-info{
+/* section::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 50%;
-    display: flex;
-    flex-direction: column;
-}
+    height: 100%;
+    background: red;
+} */
 
-.container .contact-info .box{
+.cContainer{
     position: relative;
-    padding: 20px 0;
+    min-width: 1100px;
+    min-height: 550px;
     display: flex;
 }
 
-.container .contact-info .box .icon{
-    min-width: 60px;
-    height: 60px;
+.cContainer .contact-info{
+    position: absolute;
+    top: 40px;
+    width: 350px;
+    height: calc(100% - 80px);
     background: white;
-    color: black;
+    z-index: 1;
+    padding: 25px 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    font-size: 20px;
-}
-
-.container .contact-info .box .info{
-    display: flex;
-    margin-left: 20px;
-    font-size: 14px;
     flex-direction: column;
-    font-weight: 300;
+    justify-content: space-between;
+    box-shadow: 0 20px 25px rgba(0, 0, 0, 0.45);
 }
 
-
-.container .contact-info .box .info h3{
-    font-weight: 500;
-    color: #ccac7c;
-}
-
-.contact-form{
-    width: 40%;
-    padding: 40px;
-}
-
-.contact-form h2{
-    font-size: 26px;
-    color: #ccac7c;
+.cContainer .contact-info h2{
+    font-size: 20px;
     font-weight: 500;
 }
 
-.contact-form .input-box{
+.cContainer .contact-info ul{
     position: relative;
-    width: 100%;
-    margin-top: 10px;
+    margin: 20px 0;
 }
 
-.contact-form .input-box input, .contact-form .input-box textarea{
+.cContainer .contact-info li iframe{
+    border: 1px solid #9a9a9a;
+}
+
+.cContainer .contact-info ul li{
+    position: relative;
+    list-style: none;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.cContainer .contact-info ul li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+.cContainer .contact-info ul li span:nth-child(1) i{
+    max-width: 100%;
+}
+
+.cContainer .contact-form{
+    position: absolute;
+    padding: 70px 50px;
+    padding-left: 250px;
+    margin-left: 150px;
+    width: calc(100% - 150px);
+    height: 100%;
+    background: white;
+    /* box-shadow: 0 50px 50px rgba(0, 0, 0, 0.15); */
+}
+
+.cContainer .contact-form h2{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.cContainer .contact-form form{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.cContainer .contact-form form .input-box{
+    position: relative;
+    margin-bottom: 35px;
+}
+
+.cContainer .contact-form form .input-box.w50{
+    width: 47%;
+}
+
+.cContainer .contact-form form .input-box.w100{
     width: 100%;
-    padding: 5px 0;
-    font-size: 14px;
-    margin: 10px 0;
-    border: none;
-    border-bottom: 2px solid #ccac7c;
-    outline: none;
+}
+
+.cContainer .contact-form form .input-box input,
+.cContainer .contact-form form .input-box textarea{
+    width: 100%;
     resize: none;
+    padding: 5px 0;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: 'Lora', serif;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
 }
 
-.contact-form .input-box span{
+
+.cContainer .contact-form form .input-box span{
     position: absolute;
     left: 0;
-    padding: 14px 0;
+    padding: 5px 0;
     font-size: 16px;
+    font-weight: 300;
     pointer-events: none;
-    transition: 0.5s;
-    color: darkgrey;
+    transition: 0.3s;
 }
 
-.contact-form .input-box input:focus ~ span,
-.contact-form .input-box input[type="text"]:valid ~ span,
-.contact-form .input-box input[value] ~ span,
-.contact-form .input-box textarea:focus ~ span,
-.contact-form .input-box textarea:valid ~ span{
-    font-size: 12px;
+.cContainer .contact-form form .input-box textarea{
+    height: 120px;
+}
+
+.cContainer .contact-form form .input-box input:focus ~ span,
+.cContainer .contact-form form .input-box input:valid ~ span,
+.cContainer .contact-form form .input-box textarea:focus ~ span,
+.cContainer .contact-form form .input-box textarea:valid ~ span{
     transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: gray;
 }
 
-.contact-form .input-box input[type=submit]{
-    width: 100%;
-    background: #ccac7c;
-    border: none;
+.cContainer .contact-form form .input-box input[type=submit]{
+    position: relative;
     cursor: pointer;
-    padding: 10px;
-    font-size: 16px;
+    background: dimgray;
+    color: white;
+    border: none;
+    max-width: 150px;
+    padding: 12px;
 }
 
-@media(max-width: 800px){
-    .contact{
-        padding: 50px;
+.cContainer .contact-form form .input-box input[type=submit]:hover{
+    background: gray;
+}
+
+@media(max-width: 1200px){
+    .cContainer{
+        width: 90%;
+        min-width: auto;
+        margin: 20px;
+        box-shadow: rgba(0, 0, 0, 0.2);
     }
-    .container{
+    .contact-info{
+        top: 0;
+        height: 500px;
+        position: relative;
+        box-shadow: none;
+    }
+    .cContainer .contact-form{
+        position: relative;
+        width: calc(100% - 350px);
+        padding-left: 0;
+        margin-left: 0;
+        padding: 40px;
+        height: 550px;
+        box-shadow: none;
+    }
+}
+
+@media(max-width: 991px){
+    .cContainer{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .cContainer .contact-form{
+        width: 100%;
+        height: auto;
+    }
+    .cContainer .contact-info{
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+    }
+}
+
+@media(max-width: 600px){
+    .cContainer .contact-form{
+        padding: 25px;
+    }
+    .cContainer .contact-info{
         flex-direction: column;
+        align-items: flex-start;
     }
-    .container .contact-info{
-        margin-bottom: 40px;
-    }
-    .container .contact-info, .contact-form{
+    .cContainer .contact-form form .input-box.w50{
         width: 100%;
     }
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <nav id="main-nav">
-        <a href="index.php" id="logo">BORELLI</a>
+        <a href="accueil" id="logo">BORELLI</a>
         <div id="nav-bar" class="nav-bar">
             <ul>
                 <li><a href="accueil">Accueil</a></li>
