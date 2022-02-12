@@ -28,6 +28,7 @@ footer ul{
 .fcolumn{
     width: 25%;
     padding: 0 15px;
+    overflow: hidden;
 }
 
 .fcolumn h4{
@@ -79,7 +80,7 @@ footer ul{
     margin-right: 5px;
 }
 
-.fcolumn .follow a:hover{
+.fcolumn .follow a:hover, a:active{
     color: #ccac7c;
     box-shadow: 0 0 15px #ccac7c;
     text-shadow: 0 0 15px #ccac7c;
@@ -128,7 +129,7 @@ footer ul{
     bottom: -40px;
 }
 
-@media(max-width: 800px){
+@media(max-width: 890px){
     .fcolumn{
         width: 50%;
         margin-bottom: 30px;
