@@ -80,7 +80,7 @@ footer ul{
     margin-right: 5px;
 }
 
-.fcolumn .follow a:hover, a:active{
+.fcolumn .follow a:hover, .fcolumn .follow a:active{
     color: #ccac7c;
     box-shadow: 0 0 15px #ccac7c;
     text-shadow: 0 0 15px #ccac7c;
@@ -94,17 +94,9 @@ footer ul{
 .fcolumn input[type=email]{
     padding: 5px;
     font-size: 16px;
-    border-radius: 12px;
+    border-radius: 8px;
     font-family: 'Lora', serif;
     outline: none;
-    transition: 0.2s;
-}
-
-.fcolumn input[type=email]:focus{
-    border-color: #ccac7c;
-    transition: 0.2s;
-    border-width: 4px;
-    margin: -2px;
 }
 
 #input-icon{
@@ -115,7 +107,7 @@ footer ul{
     display: none;
 }
 
-#newsletter-ok{
+#newsletter{
     margin-left: 15px;
     padding: 5px;
     border-radius: 12px;

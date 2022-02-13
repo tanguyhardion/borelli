@@ -1,7 +1,7 @@
 // Validating email input for the newsletter
 
 var newsletterSignup = document.getElementById('newsletter-signup');
-var newsletterOk = document.getElementById('newsletter-ok');
+var newsletterOk = document.getElementById('newsletter');
 var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 var newsletterX = document.getElementById('input-icon');
 

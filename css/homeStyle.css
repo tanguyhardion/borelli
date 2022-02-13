@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body{
+    font-family: 'Lora', serif;
+}
+
 .header{ 
     background: linear-gradient(rgba(4,9,30,0.7), rgba(4, 9, 30, 0.7)), url(../images/background.jpg) no-repeat center; 
     -webkit-background-size: cover;
@@ -19,7 +23,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    font-family: 'Lora', serif;
 }
 
 .text-header h1{
@@ -30,7 +33,6 @@
     margin: 10px 0 40px;
     font-size: 18px;
     color: white;
-    
 }
 
 #discover-btn{
@@ -52,48 +54,34 @@
     transition: 1s;
 }
 
-.content{
+.main{
+    padding-top: 50px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: black;
 }
 
-.accordion{
-    width: 80%;
-    margin: auto;
-    flex-basis: 40%;
-    padding: 100px 12px;
-    box-sizing: border-box;
+.main .content .card{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
-.accordion h1, p{
-    font-family: 'Lora', serif;
+.main .card .left img{
+    height: 500px;
+    width: 500px;
+    margin-top: 5px;
+    border-radius: 5px;
+}
+
+.main .content .card .right{
+    flex: 0 0 50%;
+    padding: 20px;
     color: white;
 }
 
-.accordion h1{
-    font-size: 40px;
-    text-align: center;
-}
-
-.accordion p{
-    font-size: 15px;
-    line-height: 27px;
-    text-align: justify;
-    padding: 10px;
-    padding-top: 20px;
-}
-
-.accordion img{
-    border-radius: 5%;
-    max-width: 100%;
-}
-
 @media(max-width: 1047px){
-    .content{
-        flex-direction: column;
-        text-align: center;
-    }
-    .accordion h1{
-        margin-top: 30px;
-    }
+    
 }

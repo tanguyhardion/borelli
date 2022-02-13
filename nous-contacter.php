@@ -22,7 +22,7 @@
         </header>
 
         <section>
-            <div class="cContainer">
+            <div class="contact">
                 <div class="contact-info">
                     <div>
                         <h2>Contact</h2>
@@ -32,7 +32,7 @@
                                     <i class="fa fa-phone"></i>
                                 </span>
                                 <span>
-                                    00 00 00 00 00
+                                    03 86 73 72 57
                                 </span>
                             </li>
                             <li>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 <div class="contact-form">
-                    <h2>Envoyer un message</h2>
+                    <h2>Envoyez-nous un message</h2>
                     <form>
                         <div class="input-box w50">
                             <input type="text" required>
