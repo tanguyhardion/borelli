@@ -22,40 +22,15 @@
             <div class="text-header">
                 <h1>Borelli Accordéons</h1>
                 <p>Vente en ligne d'accordéons d'Italie</p>
-                <input type="button" id="discover-btn" value="Découvrir">
+                <input type="button" id="discover" value="Découvrir">
             </div>
         </header>
 
-        <section class="main">
-            <div class="content">
-                <div class="card">
-                    <div class="left">
-                        <img src="images/caprice.jpg" alt="caprice_img">
-                    </div>
-                    <div class="right">
-                        <h1>Caprice</h1>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium, repellendus!</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="left">
-                        <img src="images/chambord.jpg" alt="chambord_img">
-                    </div>
-                    <div class="right">
-                        <h1>Chambord</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, quam!</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+
 
         <?php include_once("footer.php")?>
 
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-        <script type="text/javascript" src="js/discover.js"></script>
-        <script type="text/javascript" src="js/menu.js"></script>
-        <script type="text/javascript" src="js/scrolling.js"></script>
-        <script type="text/javascript" src="js/validation.js"></script>
-        <script type="text/javascript" src="js/home.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

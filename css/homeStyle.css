@@ -35,7 +35,7 @@ body{
     color: white;
 }
 
-#discover-btn{
+#discover{
     display: inline-block;
     text-decoration: none;
     color: white;
@@ -48,40 +48,8 @@ body{
     transition: 1s;
 }
 
-#discover-btn:hover{
+#discover:hover{
     border: 1px solid #a9957b;
     background: #a9957b;
     transition: 1s;
-}
-
-.main{
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: black;
-}
-
-.main .content .card{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.main .card .left img{
-    height: 500px;
-    width: 500px;
-    margin-top: 5px;
-    border-radius: 5px;
-}
-
-.main .content .card .right{
-    flex: 0 0 50%;
-    padding: 20px;
-    color: white;
-}
-
-@media(max-width: 1047px){
-    
 }

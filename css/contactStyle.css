@@ -186,7 +186,6 @@ section{
         width: 90%;
         min-width: auto;
         margin: 20px;
-        box-shadow: rgba(0, 0, 0, 0.2);
     }
     .contact-info{
         top: 0;
@@ -200,7 +199,7 @@ section{
         padding-left: 0;
         margin-left: 0;
         padding: 40px;
-        height: 550px;
+        height: 500px;
         box-shadow: none;
     }
 }
@@ -217,11 +216,15 @@ section{
     .contact-info{
         width: 100%;
         height: auto;
-        flex-direction: row;
+    }
+    .contact-info iframe{
+        position: absolute;
+        top: -200px;
+        right: 0;
     }
 }
 
-@media(max-width: 600px){
+@media(max-width: 629px){
     .contact-form{
         padding: 25px;
     }
@@ -231,5 +234,9 @@ section{
     }
     .contact-form .input-box.w50{
         width: 100%;
+    }
+    .contact-info iframe{
+        position: relative;
+        top: 0;
     }
 }
