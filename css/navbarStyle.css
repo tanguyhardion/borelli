@@ -64,7 +64,6 @@ nav input[type=checkbox], nav .fa{
     bottom: -5px;
     background: #ccac7c;
     height: 2px;
-    transition-property: width;
     transition-duration: 0.3s;
     transition-timing-function: ease-out;
 }
@@ -75,10 +74,12 @@ nav input[type=checkbox], nav .fa{
     width: 100%;
 }
 
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+  }
+
 @media(max-width: 800px){
-    .text-header h1{
-        font-size: 25px;
-    }
     nav .open{
         transform: rotateZ(90deg);
         transition: 0.7s;
@@ -99,7 +100,7 @@ nav input[type=checkbox], nav .fa{
         top: 0;
         right: -200px;
         text-align: left;
-        transition: 0.7s;
+        transition: 0.5s;
     }
     .nav-bar ul li{
         display: block;

@@ -44,6 +44,7 @@ checkmenu.onclick = function()
 
 
 
+
 // Validating email input for the newsletter
 
 var newsletterSignup = document.getElementById('newsletter-signup');

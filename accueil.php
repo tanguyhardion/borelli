@@ -18,15 +18,13 @@
     </head>
     <body>
         <header class="header">
-                <?php include_once("navbar.php")?>
+            <?php include_once("navbar.php")?>
             <div class="text-header">
                 <h1>Borelli Accordéons</h1>
                 <p>Vente en ligne d'accordéons d'Italie</p>
                 <input type="button" id="discover" value="Découvrir">
             </div>
         </header>
-
-
 
         <?php include_once("footer.php")?>
 

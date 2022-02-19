@@ -18,7 +18,7 @@
     </head>
     <body>
         <header class="header">
-                <?php include_once("navbar.php")?>
+            <?php include_once("navbar.php")?>
         </header>
 
         <?php include_once("footer.php")?>

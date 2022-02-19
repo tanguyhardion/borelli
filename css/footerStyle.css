@@ -20,6 +20,7 @@ footer ul{
 	max-width: 1170px;
 	margin: 0px auto;
 }
+
 .row{
 	display: flex;
 	flex-wrap: wrap;
@@ -28,7 +29,6 @@ footer ul{
 .fcolumn{
     width: 25%;
     padding: 0 15px;
-    overflow: hidden;
 }
 
 .fcolumn h4{
@@ -63,10 +63,6 @@ footer ul{
 .fcolumn ul li a:hover{
     color: #ccac7c;
     padding-left: 8px;
-}
-
-.fcolumn .follow{
-    overflow: visible;
 }
 
 .fcolumn .follow a{

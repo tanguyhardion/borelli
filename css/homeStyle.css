@@ -51,5 +51,14 @@ body{
 #discover:hover{
     border: 1px solid #a9957b;
     background: #a9957b;
-    transition: 1s;
+    transition: 0.7s;
+}
+
+@media(max-width: 800px){
+    .text-header h1{
+        font-size: 48px;
+    }
+    .text-header p{
+        font-size: 18px;
+    }
 }
