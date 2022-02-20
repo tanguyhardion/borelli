@@ -22,7 +22,7 @@
         </header>
 
         <section>
-            <div class="contact">
+            <div class="contact" data-aos="fade-in" data-aos-once="true">
                 <div class="contact-info">
                     <div>
                         <h2>Contact</h2>

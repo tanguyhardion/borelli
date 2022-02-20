@@ -10,10 +10,13 @@
                 <li><a href="nous-contacter">Contact</a></li>
             </ul>
         </div>
-    
-        <label for="check-menu">
-            <input type="checkbox" id="check-menu">
-            <i id="fa-bars" class="fa fa-bars"></i>
-        </label>
+
+        <div class="menu" id="menu">
+            <div>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+        </div>
     </nav>
 </html>
