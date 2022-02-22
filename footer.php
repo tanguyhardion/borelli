@@ -26,9 +26,9 @@
                 <div class="fcolumn">
                     <h4>Nous suivre</h4>
                     <div class="follow">
-                        <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook"></i></a>
-                        <a href="https://www.twitter.com/" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.facebook.com/" id="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.twitter.com/" id="twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.linkedin.com/" id="linkedin" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </div>
                 </div>
     
@@ -36,8 +36,8 @@
                     <h4>Newsletter</h4>
                     <ul>
                         <li>Inscrivez-vous à notre newsletter !</li>
-                        <li><i class="fa fa-times" id="input-icon"></i><input type="email" placeholder="Email" name="newsletter" id="newsletter-signup"></li>
-                        <li><input type="submit" value="OK" id="newsletter"></li>
+                        <li><i class="fa fa-times" id="input-icon"></i><input type="email" placeholder="Email" name="newsletter" id="newsletter-email"></li>
+                        <li><input type="submit" value="OK" id="newsletter-submit"></li>
                     </ul>
                 </div>
             </div>

@@ -35,31 +35,51 @@ menu.onclick = function()
 
 
 
+// Format the user's phone number
 
-// Validating email input for the newsletter
+var phone = document.getElementById("phone-number");
 
-var newsletterSignup = document.getElementById('newsletter-signup');
-var newsletterOk = document.getElementById('newsletter');
-var newsletterX = document.getElementById('input-icon');
-var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+phone.oninput = function(e){
+    e.target.value = e.target.value.replace(/[^\d]/g, '').replace(/(.{2})/g, '$1 ').trim();
+}
 
-newsletterSignup.addEventListener('input', function() {
-    let newsletterText = newsletterSignup.value;
-    newsletterX.style.display = 'inline';
 
-    if(newsletterText.match(emailRegex))
+
+// // Send email when submitting form
+
+// var submit = document.getElementById("form-submit");
+
+// submit.onclick = function()
+// {
+
+// }
+
+
+
+// Validate email input for the newsletter
+
+var newsletterEmail = document.getElementById('newsletter-email');
+var newsletterSubmit = document.getElementById('newsletter-submit');
+var inputIcon = document.getElementById('input-icon');
+var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+newsletterEmail.addEventListener('input', function() {
+    let newsletterText = newsletterEmail.value;
+    inputIcon.style.display = 'inline';
+
+    if(newsletterText.match(regex))
     {
-        newsletterOk.style.display = 'inline';
-        newsletterX.style.display = 'none';
+        newsletterSubmit.style.display = 'inline';
+        inputIcon.style.display = 'none';
     }
-    else if(newsletterSignup.value.length == 0)
+    else if(newsletterEmail.value.length == 0)
     {
-        newsletterX.style.display = 'none';
-        newsletterOk.style.display = 'none';
+        inputIcon.style.display = 'none';
+        newsletterSubmit.style.display = 'none';
     }
     else
     {
-        newsletterOk.style.display = 'none';
+        newsletterSubmit.style.display = 'none';
     }
 });
 

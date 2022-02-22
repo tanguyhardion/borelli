@@ -65,25 +65,34 @@ footer ul{
     padding-left: 8px;
 }
 
-.fcolumn .follow a{
+.follow a{
     position: relative;
     display: inline-block;
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     text-align: center;
-    line-height: 42px;
+    line-height: 44px;
     background: #171515;
     border-radius: 50%;
     font-size: 21px;
     color: #808080;
-    transition: 0.5s;
+    transition: 0.4s;
     margin-right: 5px;
 }
 
-.fcolumn .follow a:hover, .fcolumn .follow a:active{
-    color: #ccac7c;
-    box-shadow: 0 0 15px #ccac7c;
-    text-shadow: 0 0 15px #ccac7c;
+#facebook:hover, #facebook:active{
+    color: white;
+    background: #4267B2d5;
+}
+
+#twitter:hover, #twitter:active{
+    color: white;
+    background: #1DA1F2d5;
+}
+
+#linkedin:hover, #linkedin:active{
+    color: white;
+    background: #0A66C2d5;
 }
 
 .fcolumn input{
@@ -107,7 +116,7 @@ footer ul{
     display: none;
 }
 
-#newsletter{
+#newsletter-submit{
     margin-left: 15px;
     padding: 5px;
     border-radius: 12px;

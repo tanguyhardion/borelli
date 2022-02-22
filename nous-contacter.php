@@ -22,34 +22,22 @@
         </header>
 
         <section>
-            <div class="contact" data-aos="fade-in" data-aos-once="true">
+            <div class="contact" data-aos="fade-in" data-aos-duration="600" data-aos-once="true">
                 <div class="contact-info">
                     <div>
                         <h2>Contact</h2>
                         <ul class="info">
                             <li>
-                                <span>
-                                    <i class="fa fa-phone"></i>
-                                </span>
-                                <span>
-                                    03 86 73 72 57
-                                </span>
+                                <span><i class="fa fa-phone"></i></span>
+                                <span>03 86 73 72 57</span>
                             </li>
                             <li>
-                                <span>
-                                    <i class="fa fa-envelope"></i>
-                                </span>
-                                <span>
-                                    contact@borelli.fr
-                                </span>
+                                <span><i class="fa fa-envelope"></i></span>
+                                <span>contact@borelli.fr</span>
                             </li>
                             <li>
-                                <span>
-                                    <i class="fa fa-map-marker"></i>
-                                </span>
-                                <span>
-                                    36 Grande Rue, Villemer<br> 89113 VALRAVILLON
-                                </span>
+                                <span><i class="fa fa-map-marker"></i></span>
+                                <span>36 Grande Rue, Villemer<br> 89113 VALRAVILLON</span>
                             </li>
                             <li>
                                 <iframe width="250" height="230" loading="lazy" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2674.2346461356788!2d3.4743065155849475!3d47.912497079206176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee53011853149d%3A0x392d692c6c501863!2s36%20Grande%20Rue%2C%2089113%20Valravillon!5e0!3m2!1sfr!2sfr!4v1644446037521!5m2!1sfr!2sfr"></iframe>
@@ -61,27 +49,31 @@
                     <h2>Envoyez-nous un message</h2>
                     <form>
                         <div class="input-box w50">
-                            <input type="text" required>
+                            <input type="text" id="first-name"required>
                             <span>Prénom</span>
                         </div>
                         <div class="input-box w50">
-                            <input type="text" required>
+                            <input type="text" id="last-name" required>
                             <span>Nom</span>
                         </div>
                         <div class="input-box w50">
-                            <input type="email" required>
+                            <input type="email" id="email-adress" required>
                             <span>E-mail</span>
                         </div>
                         <div class="input-box w50">
-                            <input type="tel" required>
+                            <input type="tel" id="phone-number" maxlength="14" required>
                             <span>Téléphone</span>
                         </div>
                         <div class="input-box w100">
-                            <textarea name="" required></textarea>
+                        <input type="text" id="subject" required>
+                            <span>Objet</span>
+                        </div>
+                        <div class="input-box w100">
+                            <textarea id="form-body" required></textarea>
                             <span>Écrivez un message...</span>
                         </div>
                         <div class="input-box w100">
-                            <input type="submit" name="" value="Envoyer">
+                            <input type="submit" id="form-submit" value="Envoyer">
                         </div>
                     </form>
                 </div>
@@ -91,6 +83,7 @@
         <?php include_once("footer.php")?>
 
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>
