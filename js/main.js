@@ -8,15 +8,19 @@ AOS.init({
 
 // Make navbar appear when scrolling down
 
+var navbar = document.getElementById("main-nav");
+
 window.onscroll = function()
 {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
     {
-        document.getElementById("main-nav").style.backgroundColor = "black";
+        navbar.style.backgroundColor = "black";
+        navbar.style.boxShadow = "0 .5rem 1.5rem rgba(255 ,255 ,255 , .1)";
     }
     else
     {
-        document.getElementById("main-nav").style.backgroundColor = "transparent";
+        navbar.style.backgroundColor = "transparent";
+        navbar.style.boxShadow = "none";
     }
 };
 
@@ -24,7 +28,6 @@ window.onscroll = function()
 
 // Display menu on smaller screens
 
-var navbar = document.getElementById("main-nav");
 var menu = document.getElementById("menu");
 
 menu.onclick = function()
@@ -93,7 +96,7 @@ newsletterEmail.addEventListener('input', function() {
 //Scroll to top on reload
 /* window.onbeforeunload = function ()
 {
-  window.scrollTo(0, 0);
+    window.scrollTo(0, 0);
 } */
 
 
@@ -102,7 +105,7 @@ newsletterEmail.addEventListener('input', function() {
 {
    if (window.location.hostname == 'https://website.com' && window.location.pathname == '')
    {
-      window.location.href = 'https://website.com/accueil'; 
+        window.location.href = 'https://website.com/accueil'; 
    }
 }); */
 

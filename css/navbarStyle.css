@@ -27,7 +27,7 @@ nav{
     top: 0;
     width: 100%;
     z-index: 1;
-    transition: 0.5s;
+    transition: .5s;
 }
 
 .nav-bar{
@@ -39,7 +39,7 @@ nav{
     list-style: none;
     display: inline-block;
     padding: 8px 12px;
-    transition: 0.4s;
+    transition: .4s;
     border-radius: 12px;
     border: 1px solid transparent;
 }
@@ -60,7 +60,7 @@ nav{
     bottom: -5px;
     background: #ccac7c;
     height: 2px;
-    transition-duration: 0.3s;
+    transition-duration: .3s;
     transition-timing-function: ease-out;
 }
 
@@ -83,7 +83,7 @@ nav input[type=checkbox], nav .fa{
         top: 0;
         right: -250px;
         text-align: left;
-        transition: 0.5s;
+        transition: .5s;
     }
     .open .nav-bar{
         right: 0;
@@ -110,7 +110,7 @@ nav input[type=checkbox], nav .fa{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: 0.5s;
+        transition: .5s;
     }
     .menu .line-1{
         transform: translate(-50%, -7px);

@@ -57,7 +57,7 @@ footer ul{
     color: white;
     text-decoration: none;
     display: block;
-    transition: all 0.3s ease;
+    transition: all .3s ease;
 }
 
 .fcolumn ul li a:hover{
@@ -76,7 +76,7 @@ footer ul{
     border-radius: 50%;
     font-size: 21px;
     color: #808080;
-    transition: 0.4s;
+    transition: .4s;
     margin-right: 5px;
 }
 
@@ -112,7 +112,7 @@ footer ul{
     position: absolute;
     padding: 8px;
     margin-left: 170px;
-    color: rgba(255, 0, 0, 0.8);
+    color: rgba(255, 0, 0, .8);
     display: none;
 }
 
