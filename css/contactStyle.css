@@ -75,8 +75,12 @@ section{
     list-style: none;
     display: flex;
     margin: 20px 0;
-    cursor: pointer;
     align-items: flex-start;
+}
+
+.contact-info ul li a{
+    text-decoration: none;
+    color: black;
 }
 
 .contact-info ul li span:nth-child(1){
@@ -197,7 +201,7 @@ section{
     }
     .contact-info{
         top: 0;
-        height: 500px;
+        height: 520px;
         position: relative;
         box-shadow: none;
     }
@@ -207,7 +211,7 @@ section{
         padding-left: 0;
         margin-left: 0;
         padding: 40px;
-        height: 500px;
+        height: 520px;
         box-shadow: none;
     }
 }

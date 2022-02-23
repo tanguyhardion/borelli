@@ -29,11 +29,11 @@
                         <ul class="info">
                             <li>
                                 <span><i class="fa fa-phone"></i></span>
-                                <span>03 86 73 72 57</span>
+                                <span><a href="tel:0386737257">03 86 73    72 57</a></span>
                             </li>
                             <li>
                                 <span><i class="fa fa-envelope"></i></span>
-                                <span>contact@borelli.fr</span>
+                                <span><a href="mailto:contact@borelli.fr">contact@borelli.fr</a></span>
                             </li>
                             <li>
                                 <span><i class="fa fa-map-marker"></i></span>
