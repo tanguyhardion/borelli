@@ -157,9 +157,17 @@ section{
 }
 
 .contact-form .input-box input:focus ~ span,
-.contact-form .input-box input:valid ~ span,
+.contact-form .input-box input:valid:not(#phone-number) ~ span,
 .contact-form .input-box textarea:focus ~ span,
 .contact-form .input-box textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: gray;
+}
+
+#phone-number:not(:placeholder-shown) ~ span{
     transform: translateY(-20px);
     font-size: 12px;
     font-weight: 400;

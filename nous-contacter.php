@@ -5,9 +5,6 @@
         <meta charset="UTF-8">
         <title>Nous contacter - Borelli Accordéons</title>
         <link rel="icon" href="images/accordion.png">
-        <link rel="stylesheet" href="css/contactStyle.css">
-        <link rel="stylesheet" href="css/navbarStyle.css">
-        <link rel="stylesheet" href="css/footerStyle.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap">
@@ -15,8 +12,11 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
         <script src="https://use.fontawesome.com/7ffcee1de3.js"></script>
+        <link rel="stylesheet" href="css/contactStyle.css">
+        <link rel="stylesheet" href="css/navbarStyle.css">
+        <link rel="stylesheet" href="css/footerStyle.css">
     </head>
-    <body>
+    <body class="contactpage">
         <header class="header">
             <?php include_once("navbar.php")?>
         </header>
@@ -61,7 +61,7 @@
                             <span>E-mail</span>
                         </div>
                         <div class="input-box w50">
-                            <input type="tel" id="phone-number" maxlength="14" required>
+                            <input type="tel" id="phone-number" placeholder=" " maxlength="14">
                             <span>Téléphone</span>
                         </div>
                         <div class="input-box w100">

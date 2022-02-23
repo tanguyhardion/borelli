@@ -35,24 +35,27 @@ menu.onclick = function()
 
 
 
-// Format the user's phone number
+// Format the user's phone number on the contact page
 
-var phone = document.getElementById("phone-number");
+if(document.body.className === 'contactpage')
+{
+    let phone = document.getElementById("phone-number");
 
-phone.oninput = function(e){
-    e.target.value = e.target.value.replace(/[^\d]/g, '').replace(/(.{2})/g, '$1 ').trim();
+    phone.oninput = function(e){
+        e.target.value = e.target.value.replace(/[^\d]/g, '').replace(/(.{2})/g, '$1 ').trim();
+    }
 }
 
 
 
-// // Send email when submitting form
+/* // Send email when submitting form
 
-// var submit = document.getElementById("form-submit");
+var submit = document.getElementById("form-submit");
 
-// submit.onclick = function()
-// {
+submit.onclick = function()
+{
 
-// }
+} */
 
 
 
@@ -88,27 +91,27 @@ newsletterEmail.addEventListener('input', function() {
 // ------- Other Scripts -------
 
 //Scroll to top on reload
-/*window.onbeforeunload = function ()
+/* window.onbeforeunload = function ()
 {
   window.scrollTo(0, 0);
-}*/
+} */
 
 
 // Redirect to homepage if empty pathname
-/*window.addEventListener('load', function()
+/* window.addEventListener('load', function()
 {
    if (window.location.hostname == 'https://website.com' && window.location.pathname == '')
    {
       window.location.href = 'https://website.com/accueil'; 
    }
-});*/
+}); */
 
 
 
 // Scroll down when discover is clicked
-/*var btn = document.getElementById('discover-btn');
+/* var btn = document.getElementById('discover-btn');
 
 btn.onclick = function()
 {
     document.getElementById('').scrollIntoView({behavior: "smooth", block:"start"});
-}*/
+} */
