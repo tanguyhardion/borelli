@@ -11,12 +11,14 @@
             </ul>
         </div>
 
-        <div class="menu" id="menu">
+        <div id="menu" class="menu">
             <div>
                 <span class="line-1"></span>
                 <span class="line-2"></span>
                 <span class="line-3"></span>
             </div>
         </div>
+
+        <div id="overlay"></div>
     </nav>
 </html>

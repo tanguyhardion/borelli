@@ -1,3 +1,17 @@
+// Variables and functions
+
+var navbar = document.getElementById("main-nav");
+var menu = document.getElementById("menu");
+var overlay = document.getElementById("overlay");
+
+function toggleMenu() {
+    navbar.classList.toggle('open');
+    menu.classList.toggle('open');
+    overlay.classList.toggle('open');
+}
+
+
+
 // Appear On Scroll initialization
 
 AOS.init({
@@ -8,10 +22,7 @@ AOS.init({
 
 // Make navbar appear when scrolling down
 
-var navbar = document.getElementById("main-nav");
-
-window.onscroll = function()
-{
+window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
     {
         navbar.style.backgroundColor = "black";
@@ -28,12 +39,12 @@ window.onscroll = function()
 
 // Display menu on smaller screens
 
-var menu = document.getElementById("menu");
+menu.onclick = function() {
+    toggleMenu();
+};
 
-menu.onclick = function()
-{
-    navbar.classList.toggle('open');
-    menu.classList.toggle('open');
+overlay.onclick = function() {
+    toggleMenu();
 };
 
 
@@ -55,8 +66,7 @@ if(document.body.className === 'contactpage')
 
 var submit = document.getElementById("form-submit");
 
-submit.onclick = function()
-{
+submit.onclick = function() {
 
 } */
 
@@ -94,15 +104,13 @@ newsletterEmail.addEventListener('input', function() {
 // ------- Other Scripts -------
 
 //Scroll to top on reload
-/* window.onbeforeunload = function ()
-{
+/* window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 } */
 
 
 // Redirect to homepage if empty pathname
-/* window.addEventListener('load', function()
-{
+/* window.addEventListener('load', function() {
    if (window.location.hostname == 'https://website.com' && window.location.pathname == '')
    {
         window.location.href = 'https://website.com/accueil'; 
@@ -114,7 +122,6 @@ newsletterEmail.addEventListener('input', function() {
 // Scroll down when discover is clicked
 /* var btn = document.getElementById('discover-btn');
 
-btn.onclick = function()
-{
+btn.onclick = function() {
     document.getElementById('').scrollIntoView({behavior: "smooth", block:"start"});
 } */
