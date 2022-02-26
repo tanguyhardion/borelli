@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <hr>
     <footer>
         <div class="container">
             <div class="row">

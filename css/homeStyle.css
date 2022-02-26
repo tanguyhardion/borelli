@@ -10,8 +10,8 @@ body{
 .header{ 
     background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url(../images/background.jpg) no-repeat center; 
     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+     -moz-background-size: cover;
+      -o-background-size: cover;
     background-size: cover;
 }
 

@@ -84,7 +84,7 @@ nav input[type=checkbox], nav .fa{
         right: -250px;
         text-align: left;
         transition: .5s;
-        z-index: 9;
+        z-index: 4;
     }
     #overlay{
         position: fixed;
@@ -93,15 +93,13 @@ nav input[type=checkbox], nav .fa{
         top: 0;
         right: 0;
         bottom: 0;
-        transition: 0.5s;
-        z-index: 5;
+        z-index: 3;
     }
-    .open #overlay{
+    .active #overlay{
         display: block;
-        background: rgba(0, 0, 0, 0.5);
-        transition: 0.5s;
+        background-color: rgba(0, 0, 0, .6);
     }
-    .open .nav-bar{
+    .active .nav-bar{
         right: 0;
     }
     .menu{
@@ -138,13 +136,13 @@ nav input[type=checkbox], nav .fa{
     .menu .line-3{
         transform: translate(-50%, 7px);
     }
-    .open .line-1{
+    .active .line-1{
         transform: translate(-50%, -50%) rotate(-45deg);
     }
-    .open .line-2{
+    .active .line-2{
         width: 0;
     }
-    .open .line-3{
+    .active .line-3{
         transform: translate(-50%, -50%) rotate(45deg);
     }
     .nav-bar ul li{

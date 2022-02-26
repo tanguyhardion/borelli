@@ -83,7 +83,6 @@
         <?php include_once("footer.php")?>
 
         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
-        <script src="https://smtpjs.com/v3/smtp.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
     </body>
 </html>

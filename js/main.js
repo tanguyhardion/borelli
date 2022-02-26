@@ -1,17 +1,3 @@
-// Variables and functions
-
-var navbar = document.getElementById("main-nav");
-var menu = document.getElementById("menu");
-var overlay = document.getElementById("overlay");
-
-function toggleMenu() {
-    navbar.classList.toggle('open');
-    menu.classList.toggle('open');
-    overlay.classList.toggle('open');
-}
-
-
-
 // Appear On Scroll initialization
 
 AOS.init({
@@ -20,32 +6,79 @@ AOS.init({
 
 
 
-// Make navbar appear when scrolling down
+// Variables and functions
 
-window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
-    {
-        navbar.style.backgroundColor = "black";
-        navbar.style.boxShadow = "0 .5rem 1.5rem rgba(255 ,255 ,255 , .1)";
-    }
-    else
-    {
-        navbar.style.backgroundColor = "transparent";
-        navbar.style.boxShadow = "none";
-    }
-};
+var navbar = document.getElementById('main-nav');
+var menu = document.getElementById("menu");
+var overlay = document.getElementById("overlay");
+
+function toggleMenu() {
+    navbar.classList.toggle('active');
+    menu.classList.toggle('active');
+    overlay.classList.toggle('active');
+}
 
 
 
-// Display menu on smaller screens
+// Display the menu on smaller screens
 
 menu.onclick = function() {
     toggleMenu();
 };
 
+// Close the menu when user clicks away or scrolls
+
 overlay.onclick = function() {
     toggleMenu();
 };
+
+
+
+// Make navbar appear when scrolling down
+
+window.onscroll = function() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        navbar.style.backgroundColor = "black";
+        navbar.style.boxShadow = "0 .5rem 1.5rem rgba(255 ,255 ,255 , .1)";
+    }
+    else {
+        navbar.style.backgroundColor = "transparent";
+        navbar.style.boxShadow = "none";
+    }
+
+    if (navbar.classList.contains('active')) {
+        toggleMenu();
+    }
+};
+
+
+
+// Format the user's phone number on the contact page
+
+if(document.body.className === 'productpage')
+{
+    let views = document.querySelectorAll('.popup-view');
+    let opens = document.querySelectorAll('.popup-btn');
+    let closes = document.querySelectorAll('.product-close');
+
+    let popup = function(popUp) {
+        views[popUp].classList.add('poped');
+    };
+
+    opens.forEach((open, i) => {
+        open.addEventListener('click', () => {
+            popup(i);
+        })
+    });
+
+    closes.forEach((close) => {
+        close.addEventListener('click', () => {
+            views.forEach((view) => {
+                view.classList.remove('poped');
+            })
+        })
+    });
+}
 
 
 

@@ -10,6 +10,7 @@ footer{
     padding: 60px 0;
     line-height: 1.5;
     font-family: 'Lora', serif;
+    border-top: 2px solid white;
 }
 
 footer ul{
