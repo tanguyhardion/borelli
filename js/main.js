@@ -39,16 +39,13 @@ overlay.onclick = function() {
 window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         navbar.style.backgroundColor = "black";
-        navbar.style.boxShadow = "0 .5rem 1.5rem rgba(255 ,255 ,255 , .1)";
     }
     else {
         navbar.style.backgroundColor = "transparent";
-        navbar.style.boxShadow = "none";
     }
 
-    if (navbar.classList.contains('active')) {
+    if (navbar.classList.contains('active'))
         toggleMenu();
-    }
 };
 
 
@@ -78,6 +75,13 @@ if(document.body.className === 'productpage')
             })
         })
     });
+
+    views.forEach((view) => {
+        view.onclick = function(e) {
+            if(e.target.classList.contains('popup-view'))
+                view.classList.remove('poped');
+        }
+    });
 }
 
 
@@ -88,7 +92,7 @@ if(document.body.className === 'contactpage')
 {
     let phone = document.getElementById("phone-number");
 
-    phone.oninput = function(e){
+    phone.oninput = function(e) {
         e.target.value = e.target.value.replace(/[^\d]/g, '').replace(/(.{2})/g, '$1 ').trim();
     }
 }

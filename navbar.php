@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
     <nav id="main-nav">
-        <a href="accueil" id="logo">BORELLI</a>
+        <a href="accueil" id="logo"><img src="images/logo.png" alt="borelli_logo"></a>
         <div id="nav-bar" class="nav-bar">
             <ul>
                 <li><a href="accueil">Accueil</a></li>

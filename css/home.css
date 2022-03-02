@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lora', serif;
+}
+
+.header { 
+    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url(../images/background.jpg) no-repeat center; 
+    -webkit-background-size: cover;
+     -moz-background-size: cover;
+      -o-background-size: cover;
+    background-size: cover;
+}
+
+.text-header {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-header h1 {
+    font-size: 62px;
+}
+
+.text-header p {
+    margin: 10px 0 40px;
+    font-size: 18px;
+    color: white;
+}
+
+@media(max-width: 800px) {
+    .text-header h1 {
+        font-size: 48px;
+    }
+    .text-header p {
+        font-size: 18px;
+    }
+}
