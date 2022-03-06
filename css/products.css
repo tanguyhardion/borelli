@@ -89,7 +89,7 @@ section {
     opacity: 0;
     visibility: hidden;
     z-index: 2;
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(100, 100, 100, .7);
     position: fixed;
     top: 0;
     left: 0;
@@ -180,7 +180,7 @@ section {
     margin: 10px;
 }
 
-.product .popup-card .info .order-btn {
+.product .popup-card .info .add-cart-btn {
     color: white;
     background-color: #ccac7c;
     font-size: 16px;
@@ -194,7 +194,7 @@ section {
     transition: .4s;
 }
 
-.product .popup-card .info .order-btn:hover {
+.product .popup-card .info .add-cart-btn:hover {
     background-color: #ccac7c;
     box-shadow: 0px 15px 20px rgba(204, 172, 124, .4);
     color: #fff;
@@ -244,7 +244,7 @@ section {
         margin: 5px;
         font-size: 30px;
     }
-    .product .popup-card .info .order-btn {
+    .product .popup-card .info .add-cart-btn {
         margin: 5px auto;
         padding: 5px 40px;
     }

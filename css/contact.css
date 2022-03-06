@@ -161,7 +161,8 @@ section {
     color: gray;
 }
 
-#phone-number:not(:placeholder-shown) ~ span {
+#phone-number:not(:placeholder-shown) ~ span,
+#email-adress:not(:placeholder-shown) ~ span{
     transform: translateY(-20px);
     font-size: 12px;
     font-weight: 400;

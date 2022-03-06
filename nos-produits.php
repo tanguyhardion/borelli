@@ -22,204 +22,35 @@
 
         <section>
             <div class="pcontainer">
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Caprice</h2>
-                        <span class="price">4 420,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/caprice.png" alt="caprice_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/caprice.png" alt="caprice_accordion">
+                <?php
+                    $db = mysqli_connect('mysql-tanguy.alwaysdata.net', 'tanguy', 'd&P9~qGbL[MAKg8wmpN', 'tanguy_borelli', '3306');
+                    $query = mysqli_query($db, 'SELECT * FROM products');
+                    while ($row = $query->fetch_row()) {
+                        echo
+                        ' <div class="product">
+                            <div class="product-card">
+                                <h2 class="name">' . $row['1'] . '</h2>
+                                <span class="price">' . $row['4'] . ',00 €</span>
+                                <a class="popup-btn">Détails</a>
+                                <img src="images/' . $row['1'] . '.png">
                             </div>
-                            <div class="info">
-                                <h2>Caprice<br><span>Accordéon chromatique</span></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ipsa in laboriosam accusantium ducimus minus.</p>
-                                <span class="price">4 420,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
+                            <div class="popup-view">
+                                <div class="popup-card">
+                                    <a><i class="fa fa-times product-close"></i></a>
+                                    <div class="product-img">
+                                        <img src="images/' . $row['1'] . '_view.png">
+                                    </div>
+                                    <div class="info">
+                                        <h2>' . $row['1'] . '<br><span>Accordéon ' . $row['2'] . '</span></h2>
+                                        <p>' . $row['3'] . '</p>
+                                        <span class="price">' . $row['4'] . ',00 €</span>
+                                        <a href="#" class="add-cart-btn">Ajouter au panier</a>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Chambord</h2>
-                        <span class="price">3 995,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/chambord.png" alt="chambord_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/chambord.png" alt="chambord_accordion">
-                            </div>
-                            <div class="info">
-                                <h2>Chambord<br><span>Accordéon diatonique</span></h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, possimus? Aut nobis architecto ipsum ad.</p>
-                                <span class="price">3 995,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Caprice</h2>
-                        <span class="price">4 420,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/caprice.png" alt="caprice_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/caprice.png" alt="caprice_accordion">
-                            </div>
-                            <div class="info">
-                                <h2>Caprice<br><span>Accordéon chromatique</span></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ipsa in laboriosam accusantium ducimus minus.</p>
-                                <span class="price">4 420,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Chambord</h2>
-                        <span class="price">3 995,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/chambord.png" alt="chambord_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/chambord.png" alt="chambord_accordion">
-                            </div>
-                            <div class="info">
-                                <h2>Chambord<br><span>Accordéon diatonique</span></h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, possimus? Aut nobis architecto ipsum ad.</p>
-                                <span class="price">3 995,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Caprice</h2>
-                        <span class="price">4 420,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/caprice.png" alt="caprice_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/caprice.png" alt="caprice_accordion">
-                            </div>
-                            <div class="info">
-                                <h2>Caprice<br><span>Accordéon chromatique</span></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ipsa in laboriosam accusantium ducimus minus.</p>
-                                <span class="price">4 420,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Chambord</h2>
-                        <span class="price">3 995,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/chambord.png" alt="chambord_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/chambord.png" alt="chambord_accordion">
-                            </div>
-                            <div class="info">
-                                <h2>Chambord<br><span>Accordéon diatonique</span></h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, possimus? Aut nobis architecto ipsum ad.</p>
-                                <span class="price">3 995,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Caprice</h2>
-                        <span class="price">4 420,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/caprice.png" alt="caprice_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/caprice.png" alt="caprice_accordion">
-                            </div>
-                            <div class="info">
-                                <h2>Caprice<br><span>Accordéon chromatique</span></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ipsa in laboriosam accusantium ducimus minus.</p>
-                                <span class="price">4 420,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Chambord</h2>
-                        <span class="price">3 995,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/chambord.png" alt="chambord_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/chambord.png" alt="chambord_accordion">
-                            </div>
-                            <div class="info">
-                                <h2>Chambord<br><span>Accordéon diatonique</span></h2>
-                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, possimus? Aut nobis architecto ipsum ad.</p>
-                                <span class="price">3 995,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="product">
-                    <div class="product-card">
-                        <h2 class="name">Caprice</h2>
-                        <span class="price">4 420,00 €</span>
-                        <a class="popup-btn">Détails</a>
-                        <img src="images/caprice.png" alt="caprice_accordion">
-                    </div>
-                    <div class="popup-view">
-                        <div class="popup-card">
-                            <a><i class="fa fa-times product-close"></i></a>
-                            <div class="product-img">
-                                <img src="images/caprice.png" alt="caprice_accordion">
-                            </div>
-                            <div class="info">
-                                <h2>Caprice<br><span>Accordéon chromatique</span></h2>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil ipsa in laboriosam accusantium ducimus minus.</p>
-                                <span class="price">4 420,00 €</span>
-                                <a href="#" class="order-btn">Commander</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                        </div> ';
+                    }
+                ?>
             </div>
         </section>
 

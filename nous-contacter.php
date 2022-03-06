@@ -28,7 +28,7 @@
                         <ul class="info">
                             <li>
                                 <span><i class="fa fa-phone"></i></span>
-                                <span><a href="tel:0386737257">03 86 73    72 57</a></span>
+                                <span><a href="tel:0386737257">03 86 73 72 57</a></span>
                             </li>
                             <li>
                                 <span><i class="fa fa-envelope"></i></span>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="contact-form">
                     <h2>Envoyez-nous un message</h2>
-                    <form>
+                    <form id="test">
                         <div class="input-box w50">
                             <input type="text" id="first-name"required>
                             <span>Prénom</span>
@@ -56,7 +56,7 @@
                             <span>Nom</span>
                         </div>
                         <div class="input-box w50">
-                            <input type="email" id="email-adress" required>
+                            <input type="email" id="email-adress" placeholder=" " required>
                             <span>E-mail</span>
                         </div>
                         <div class="input-box w50">

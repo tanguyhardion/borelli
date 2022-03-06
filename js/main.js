@@ -50,7 +50,7 @@ window.onscroll = function() {
 
 
 
-// Format the user's phone number on the contact page
+// Open the detailed view of a product when the user clicks on it
 
 if(document.body.className === 'productpage')
 {
