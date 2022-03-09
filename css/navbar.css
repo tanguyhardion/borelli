@@ -49,6 +49,14 @@ nav {
     overflow: hidden;
 }
 
+.nav-bar li a span{
+    font-size: 22px;
+}
+
+#a-signup:after{
+    height: 0;
+}
+
 .nav-bar a:after {
     content: '';
     position: absolute;

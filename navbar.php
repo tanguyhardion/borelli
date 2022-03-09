@@ -1,5 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css"/>
+    </head>
     <nav id="main-nav">
         <a href="accueil" id="logo"><img src="images/logo.png" alt="borelli_logo"></a>
         <div id="nav-bar" class="nav-bar">
@@ -8,6 +11,7 @@
                 <li><a href="nos-produits">Produits</a></li>
                 <li><a href="qui-sommes-nous">Qui sommes-nous</a></li>
                 <li><a href="nous-contacter">Contact</a></li>
+                <li><a href="inscription" id="a-signup"><span class="fa-solid fa-user"></span></a></li>
             </ul>
         </div>
 
