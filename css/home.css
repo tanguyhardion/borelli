@@ -7,12 +7,16 @@ body {
     font-family: 'Lora', serif;
 }
 
-.header { 
+header {
     background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url(../images/background.jpg) no-repeat center; 
     -webkit-background-size: cover;
      -moz-background-size: cover;
       -o-background-size: cover;
     background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 2;
 }
 
 .text-header {

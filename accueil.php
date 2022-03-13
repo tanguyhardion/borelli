@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/footer.css">
     </head>
     <body class="homepage">
-        <header class="header">
+        <header>
             <?php include_once("navbar.php")?>
             <div class="text-header">
                 <h1>Borelli Accordéons</h1>

@@ -9,16 +9,16 @@ body{
      -moz-background-size: cover;
       -o-background-size: cover;
     background-size: cover;
-    max-height: 100vh;
+    min-height: 100vh;
     font-family: 'Lora', serif;
     color: white;
 }
 
-div{
-    width: 300px;
+.signup{
+    width: 400px;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     padding: 20px;
-    margin: 6% auto 0;
+    margin: 10em auto 0;
     text-align: center;
 }
 

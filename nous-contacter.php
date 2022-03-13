@@ -16,7 +16,7 @@
         <link rel="stylesheet" href="css/footer.css">
     </head>
     <body class="contactpage">
-        <header class="header">
+        <header>
             <?php include_once("navbar.php")?>
         </header>
 
