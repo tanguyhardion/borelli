@@ -21,19 +21,7 @@
         </header>
 
         <section>
-            <div class="about">
-                <div class="inner-container">
-                    <h1>Qui sommes-nous ?</h1>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis consequatur cumque iure consectetur atque facilis voluptatibus! Atque corrupti labore est animi debitis, dolore consequatur nisi culpa eligendi inventore rem, explicabo sequi minima veritatis necessitatibus enim fugit laboriosam dolor. Non aliquam unde provident magni fuga ipsum.
-                    </p>
-                    <div class="services">
-                        <span>Expert en accordéons depuis 2001</span>
-                        <span>Produits manufacturés avec soin</span>
-                        <span>Vente sécurisée</span>
-                    </div>
-                </div>
-            </div>
+            
         </section>
 
         <?php include_once("footer.php")?>
