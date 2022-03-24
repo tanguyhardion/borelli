@@ -36,13 +36,13 @@
                                 <h2 class="name">' . $row['1'] . '</h2>
                                 <span class="price">' . $row['4'] . ',00 €</span>
                                 <a class="popup-btn">Détails</a>
-                                <img src="images/' . $row['1'] . '.png">
+                                <img src="images/' . strtolower($row['1']) . '.png">
                             </div>
                             <div class="popup-view">
                                 <div class="popup-card">
                                     <a><i class="fa fa-times product-close"></i></a>
                                     <div class="product-img">
-                                        <img src="images/' . $row['1'] . '_view.png">
+                                        <img src="images/' . strtolower($row['1']) . '_view.png">
                                     </div>
                                     <div class="info">
                                         <h2>' . $row['1'] . '<br><span>Accordéon ' . $row['2'] . '</span></h2>
