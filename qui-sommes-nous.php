@@ -15,9 +15,12 @@
         <link rel="stylesheet" href="css/navbar.css">
         <link rel="stylesheet" href="css/footer.css">
     </head>
-    <body class="productpage">
+    <body class="aboutpage">
         <header>
             <?php include_once("navbar.php")?>
+            <div class="title">
+                <h1>Qui sommes-nous ?</h1>
+            </div>
         </header>
 
         <section>

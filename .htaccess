@@ -1,3 +1,5 @@
+php_value display_errors 1
+DirectoryIndex accueil.php
 RewriteEngine on
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME}\.php -f

@@ -5,12 +5,6 @@
 }
 
 header {
-    background: linear-gradient(rgba(4, 9, 30, .7), rgba(4, 9, 30, .7)), url(../images/background.jpg) no-repeat center; 
-    -webkit-background-size: cover;
-     -moz-background-size: cover;
-      -o-background-size: cover;
-    background-size: cover;
-    min-height: 100vh;
     width: 100%;
     position: relative;
     z-index: 2;
@@ -20,3 +14,22 @@ body {
     font-family: 'Lora', serif;
 }
 
+.title {
+    background: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1012%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(15%2c 15%2c 15%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c387.796C68.671%2c368.387%2c116.586%2c312.927%2c179.685%2c279.596C250.73%2c242.067%2c345.803%2c244.299%2c393.732%2c179.812C443.555%2c112.778%2c446.742%2c20.143%2c433.855%2c-62.379C421.055%2c-144.343%2c378.992%2c-218.728%2c322.069%2c-279.074C266.68%2c-337.793%2c192.55%2c-370.009%2c116.96%2c-398.33C36.042%2c-428.647%2c-51.6%2c-481.114%2c-131.884%2c-449.156C-212.296%2c-417.147%2c-229.626%2c-312.69%2c-278.175%2c-241.04C-320.011%2c-179.298%2c-387.299%2c-131.032%2c-397.501%2c-57.152C-407.687%2c16.611%2c-353.793%2c80.483%2c-332.425%2c151.814C-306.821%2c237.286%2c-332.204%2c352.059%2c-259.447%2c403.708C-187.334%2c454.9%2c-85.102%2c411.849%2c0%2c387.796' fill='%230b0b0b'%3e%3c/path%3e%3cpath d='M1440 865.616C1500.68 865.809 1562.938 863.4359999999999 1615.304 832.778 1668.796 801.461 1707.453 750.285 1733.258 693.927 1759.08 637.531 1760.48 575.816 1761.356 513.796 1762.383 441.028 1787.824 354.874 1738.805 301.084 1689.642 247.13600000000002 1601.385 263.409 1528.571 258.356 1469.803 254.27800000000002 1414.284 264.83 1356.179 274.532 1289.436 285.676 1216.286 278.513 1162.438 319.491 1104.376 363.676 1058.484 431.677 1053.989 504.5 1049.569 576.103 1100.172 637.159 1139.109 697.412 1173.147 750.083 1210.673 801.064 1265.412 831.664 1318.231 861.191 1379.488 865.423 1440 865.616' fill='%23141414'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1012'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e") no-repeat;
+    background-size: 100% 100%;
+    color: white;
+    width: 100%;
+    position: relative;
+    padding: 200px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.title h1 {
+    font-size: 62px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    max-width: 600px;
+}
