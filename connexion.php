@@ -10,7 +10,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <title>Inscription - Borelli Accordéons</title>
+        <title>Connexion - Borelli Accordéons</title>
         <link rel="icon" href="images/accordion.png">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,14 +26,13 @@
         </header>
 
         <div class="account">
-            <h1>Inscription</h1>
+            <h1>Connexion</h1>
             <form method="post">
                 <input type="text" name="user-email" placeholder="Adresse e-mail" required>
                 <input type="password" name="password" placeholder="Mot de passe" required>
-                <input type="password" name="repeat-password" placeholder="Retaper le mot de passe" required>
-                <input type="submit" name="submit" value="S'inscrire">
+                <input type="submit" name="submit" value="Se connecter">
             </form>
-            <p>Déjà un compte ? <a href="connexion">Se connecter</a></p>
+            <p>Pas de compte ? <a href="inscription">S'inscrire</a></p>
         </div>
 
         <script type="text/javascript" src="js/main.js"></script>
