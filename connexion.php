@@ -27,7 +27,7 @@
 
         <div class="account">
             <h1>Connexion</h1>
-            <form method="post">
+            <form action="accueil" method="post">
                 <input type="text" name="user-email" placeholder="Adresse e-mail" required>
                 <input type="password" name="password" placeholder="Mot de passe" required>
                 <input type="submit" name="submit" value="Se connecter">
