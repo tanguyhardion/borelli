@@ -38,10 +38,10 @@ overlay.onclick = function() {
 
 window.onscroll = function() {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        navbar.style.backgroundColor = "black";
+        navbar.style.backgroundColor = 'black';
     }
     else {
-        navbar.style.backgroundColor = "transparent";
+        navbar.style.backgroundColor = 'transparent';
     }
 
     if (navbar.classList.contains('active'))
@@ -153,12 +153,3 @@ newsletterEmail.addEventListener('input', function() {
         window.location.href = 'https://website.com/accueil'; 
    }
 }); */
-
-
-
-// Scroll down when discover is clicked
-/* var btn = document.getElementById('discover-btn');
-
-btn.onclick = function() {
-    document.getElementById('').scrollIntoView({behavior: "smooth", block:"start"});
-} */
