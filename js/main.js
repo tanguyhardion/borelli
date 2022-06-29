@@ -22,13 +22,13 @@ function toggleMenu() {
 
 // Display the menu on smaller screens
 
-menu.onclick = function() {
+menu.onclick = () => {
     toggleMenu();
 };
 
 // Close the menu when user clicks away or scrolls
 
-overlay.onclick = function() {
+overlay.onclick = () => {
     toggleMenu();
 };
 
@@ -36,13 +36,12 @@ overlay.onclick = function() {
 
 // Make navbar appear when scrolling down
 
-window.onscroll = function() {
-    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+window.onscroll = () => {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
         navbar.style.backgroundColor = 'black';
-    }
-    else {
+
+    else
         navbar.style.backgroundColor = 'transparent';
-    }
 
     if (navbar.classList.contains('active'))
         toggleMenu();
