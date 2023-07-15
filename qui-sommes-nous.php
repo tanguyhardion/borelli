@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
     <script src="https://use.fontawesome.com/7ffcee1de3.js"></script>
     <link rel="stylesheet" href="css/qui-sommes-nous.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
 </head>
 
 <body class="aboutpage">

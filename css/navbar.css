@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-    
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -42,11 +42,11 @@ nav {
     overflow: hidden;
 }
 
-.nav-bar li a span{
+.nav-bar li a span {
     font-size: 22px;
 }
 
-#a-signup:after{
+#a-signup:after {
     height: 0;
 }
 
@@ -62,13 +62,16 @@ nav {
     transition-timing-function: ease-out;
 }
 
-.nav-bar a:hover:after, .nav-bar a:focus:after, .nav-bar a:active:after {
+.nav-bar a:hover:after,
+.nav-bar a:focus:after,
+.nav-bar a:active:after {
     left: 0;
     right: auto;
     width: 100%;
 }
 
-nav input[type=checkbox], nav .fa {
+nav input[type=checkbox],
+nav .fa {
     display: none;
 }
 
@@ -84,6 +87,7 @@ nav input[type=checkbox], nav .fa {
         transition: .5s;
         z-index: 4;
     }
+
     #overlay {
         position: fixed;
         display: none;
@@ -93,13 +97,16 @@ nav input[type=checkbox], nav .fa {
         bottom: 0;
         z-index: 3;
     }
+
     .active #overlay {
         display: block;
         background-color: rgba(0, 0, 0, .6);
     }
+
     .active .nav-bar {
         right: 0;
     }
+
     .menu {
         width: 30px;
         height: 30px;
@@ -107,12 +114,14 @@ nav input[type=checkbox], nav .fa {
         cursor: pointer;
         z-index: 9;
     }
+
     .menu div {
         width: 20px;
         height: 20px;
         margin: 5px;
         position: relative;
     }
+
     .menu span {
         background: white;
         width: 100%;
@@ -125,24 +134,31 @@ nav input[type=checkbox], nav .fa {
         transform: translate(-50%, -50%);
         transition: .5s;
     }
+
     .menu .line-1 {
         transform: translate(-50%, -7px);
     }
+
     .menu .line-2 {
         transform: translate(-50%, 0);
     }
+
     .menu .line-3 {
         transform: translate(-50%, 7px);
     }
+
     .active .line-1 {
         transform: translate(-50%, -50%) rotate(-45deg);
     }
+
     .active .line-2 {
         width: 0;
     }
+
     .active .line-3 {
         transform: translate(-50%, -50%) rotate(45deg);
     }
+
     .nav-bar ul li {
         display: block;
         text-align: right;
@@ -150,13 +166,16 @@ nav input[type=checkbox], nav .fa {
         border-radius: 0;
         padding: 12px;
     }
+
     .nav-bar ul {
         margin-top: 70px;
         padding: 20px;
     }
+
     .nav-bar a:after {
         height: 0;
     }
+
     #logo {
         margin: auto;
         text-align: center;

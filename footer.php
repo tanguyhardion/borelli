@@ -1,5 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
+
+<head>
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+
 <footer>
     <div class="container">
         <div class="row">

@@ -123,7 +123,8 @@ section {
     padding-top: 30px;
 }
 
-.contact-form input, textarea {
+.contact-form input,
+textarea {
     background: rgb(230, 230, 230);
 }
 
@@ -168,10 +169,10 @@ section {
     height: 120px;
 }
 
-.contact-form .input-box input:focus ~ span,
-.contact-form .input-box input:valid:not(#phone-number) ~ span,
-.contact-form .input-box textarea:focus ~ span,
-.contact-form .input-box textarea:valid ~ span {
+.contact-form .input-box input:focus~span,
+.contact-form .input-box input:valid:not(#phone-number)~span,
+.contact-form .input-box textarea:focus~span,
+.contact-form .input-box textarea:valid~span {
     transform: translateY(-20px);
     font-size: 12px;
     font-weight: 400;
@@ -179,8 +180,8 @@ section {
     color: gray;
 }
 
-#phone-number:not(:placeholder-shown) ~ span,
-#email-adress:not(:placeholder-shown) ~ span{
+#phone-number:not(:placeholder-shown)~span,
+#email-adress:not(:placeholder-shown)~span {
     transform: translateY(-20px);
     font-size: 12px;
     font-weight: 400;
@@ -212,12 +213,14 @@ section {
         min-width: auto;
         margin: 20px;
     }
+
     .contact-info {
         top: 0;
         height: 520px;
         position: relative;
         box-shadow: none;
     }
+
     .contact-form {
         position: relative;
         width: calc(100% - 350px);
@@ -235,14 +238,17 @@ section {
         flex-direction: column-reverse;
         padding: 25px 0;
     }
+
     .contact-form {
         width: 100%;
         height: auto;
     }
+
     .contact-info {
         width: 100%;
         height: auto;
     }
+
     .contact-info iframe {
         position: absolute;
         top: -200px;
@@ -254,13 +260,16 @@ section {
     .contact-form {
         padding: 25px;
     }
+
     .contact-info {
         flex-direction: column;
         align-items: flex-start;
     }
+
     .contact-form .input-box.w50 {
         width: 100%;
     }
+
     .contact-info iframe {
         position: relative;
         top: 0;

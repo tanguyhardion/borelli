@@ -3,6 +3,7 @@
 
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css" />
+    <link rel="stylesheet" href="css/navbar.css">
 </head>
 
 <nav id="main-nav">

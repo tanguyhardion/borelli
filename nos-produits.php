@@ -13,8 +13,6 @@
     <link rel="stylesheet" href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css">
     <script src="https://use.fontawesome.com/7ffcee1de3.js"></script>
     <link rel="stylesheet" href="css/nos-produits.css">
-    <link rel="stylesheet" href="css/navbar.css">
-    <link rel="stylesheet" href="css/footer.css">
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js" defer></script>
     <script type="text/javascript" src="js/main.js" defer></script>
 </head>

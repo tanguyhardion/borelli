@@ -14,17 +14,17 @@ footer {
 }
 
 footer ul {
-	list-style: none;
+    list-style: none;
 }
 
 .container {
-	max-width: 1170px;
-	margin: 0px auto;
+    max-width: 1170px;
+    margin: 0px auto;
 }
 
 .row {
-	display: flex;
-	flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .fcolumn {
@@ -81,19 +81,22 @@ footer ul {
     margin-right: 5px;
 }
 
-#facebook:hover, #facebook:active {
+#facebook:hover,
+#facebook:active {
     color: white;
-    background: #4267B2d5;
+    background: #4267B2;
 }
 
-#twitter:hover, #twitter:active {
+#twitter:hover,
+#twitter:active {
     color: white;
-    background: #1DA1F2d5;
+    background: #1DA1F2;
 }
 
-#linkedin:hover, #linkedin:active {
+#linkedin:hover,
+#linkedin:active {
     color: white;
-    background: #0A66C2d5;
+    background: #0A66C2;
 }
 
 .fcolumn input {
