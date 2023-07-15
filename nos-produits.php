@@ -32,25 +32,25 @@
             $config = parse_ini_file('mysql.ini');
             $db = mysqli_connect($config['host'], $config['username'], $config['password'], $config['dbname'], $config['port']);
             $query = mysqli_query($db, 'SELECT * FROM products');
-            while ($row = $query->fetch_row()) {
+            while ($data = $query->fetch_assoc()) {
                 echo
                 '<div class="product">
                     <div class="product-card">
-                        <h2 class="name">' . $row['1'] . '</h2>
-                        <span class="price">' . $row['4'] . ',00 €</span>
+                        <h2 class="name">' . $data['name'] . '</h2>
+                        <span class="price">' . $data['price'] . ',00 €</span>
                         <a class="popup-btn">Détails</a>
-                        <img src="images/' . strtolower($row['1']) . '.png">
+                        <img src="images/' . strtolower($data['name']) . '.png">
                     </div>
                     <div class="popup-view">
                         <div class="popup-card">
                             <a><i class="fa fa-times product-close"></i></a>
                             <div class="product-img">
-                                <img src="images/' . strtolower($row['1']) . '_view.png">
+                                <img src="images/' . strtolower($data['name']) . '.png">
                             </div>
                             <div class="info">
-                                <h2>' . $row['1'] . '<br><span>Accordéon ' . $row['2'] . '</span></h2>
-                                <p>' . $row['3'] . '</p>
-                                <span class="price">' . $row['4'] . ',00 €</span>
+                                <h2>' . $data['name'] . '<br><span>Accordéon ' . $data['type'] . '</span></h2>
+                                <p>' . nl2br($data['description']) . '</p>
+                                <span class="price">' . $data['price'] . ',00 €</span>
                                 <a href="nous-contacter.php" class="add-cart-btn">Nous contacter</a>
                             </div>
                         </div>
