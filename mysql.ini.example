@@ -1,0 +1,6 @@
+; example of a mysql.ini configuration file used by the scripts of this website
+host=
+username=
+password=
+dbname=
+port=
