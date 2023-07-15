@@ -1,5 +1,4 @@
 // Appear On Scroll initialization
-
 AOS.init({
     easing: 'ease-in-quad',
 });
@@ -7,7 +6,6 @@ AOS.init({
 
 
 // Variables and functions
-
 var navbar = document.getElementById('main-nav');
 var menu = document.getElementById("menu");
 var overlay = document.getElementById("overlay");
@@ -21,13 +19,11 @@ function toggleMenu() {
 
 
 // Display the menu on smaller screens
-
 menu.onclick = () => {
     toggleMenu();
 };
 
 // Close the menu when user clicks away or scrolls
-
 overlay.onclick = () => {
     toggleMenu();
 };
@@ -35,7 +31,6 @@ overlay.onclick = () => {
 
 
 // Make navbar appear when scrolling down
-
 window.onscroll = () => {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20)
         navbar.style.backgroundColor = 'black';
@@ -50,14 +45,12 @@ window.onscroll = () => {
 
 
 // Open the detailed view of a product when the user clicks on it
-
-if(document.body.className === 'productpage')
-{
+if (document.body.className === 'productpage') {
     let views = document.querySelectorAll('.popup-view');
     let opens = document.querySelectorAll('.popup-btn');
     let closes = document.querySelectorAll('.product-close');
 
-    let popup = function(popUp) {
+    let popup = function (popUp) {
         views[popUp].classList.add('poped');
     };
 
@@ -76,8 +69,8 @@ if(document.body.className === 'productpage')
     });
 
     views.forEach((view) => {
-        view.onclick = function(e) {
-            if(e.target.classList.contains('popup-view'))
+        view.onclick = function (e) {
+            if (e.target.classList.contains('popup-view'))
                 view.classList.remove('poped');
         }
     });
@@ -86,12 +79,9 @@ if(document.body.className === 'productpage')
 
 
 // Format the user's phone number on the contact page
-
-if(document.body.className === 'contactpage')
-{
+if (document.body.className === 'contactpage') {
     let phone = document.getElementById("phone-number");
-
-    phone.oninput = function(e) {
+    phone.oninput = function (e) {
         e.target.value = e.target.value.replace(/[^\d]/g, '').replace(/(.{2})/g, '$1 ').trim();
     }
 }
@@ -115,22 +105,19 @@ var newsletterSubmit = document.getElementById('newsletter-submit');
 var inputIcon = document.getElementById('input-icon');
 var regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-newsletterEmail.addEventListener('input', function() {
+newsletterEmail.addEventListener('input', function () {
     let newsletterText = newsletterEmail.value;
     inputIcon.style.display = 'inline';
 
-    if(newsletterText.match(regex))
-    {
+    if (newsletterText.match(regex)) {
         newsletterSubmit.style.display = 'inline';
         inputIcon.style.display = 'none';
     }
-    else if(newsletterEmail.value.length == 0)
-    {
+    else if (newsletterEmail.value.length == 0) {
         inputIcon.style.display = 'none';
         newsletterSubmit.style.display = 'none';
     }
-    else
-    {
+    else {
         newsletterSubmit.style.display = 'none';
     }
 });
