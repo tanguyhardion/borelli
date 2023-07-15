@@ -22,7 +22,6 @@
         <?php include_once("navbar.php") ?>
         <div class="text-header">
             <h1>Borelli Accordéons</h1>
-            <p>Vente en ligne d'accordéons d'Italie</p>
         </div>
     </header>
 

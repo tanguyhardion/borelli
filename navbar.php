@@ -14,7 +14,6 @@
             <li><a href="nos-produits">Produits</a></li>
             <li><a href="qui-sommes-nous">Qui sommes-nous</a></li>
             <li><a href="nous-contacter">Contact</a></li>
-            <li><a href="inscription" id="a-signup"><span class="fa-solid fa-user"></span></a></li>
         </ul>
     </div>
 

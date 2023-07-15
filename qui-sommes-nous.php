@@ -28,7 +28,7 @@
             <img src="images/aboutus.jpg" alt="aboutus_img">
             <div class="about-text">
                 <h1>À propos</h1>
-                <h5>Expert en accordéons dpeuis 2001</h5>
+                <h5>Expert en accordéons depuis 2001</h5>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste fuga impedit est, quibusdam numquam soluta, expedita rem eligendi voluptatibus reprehenderit iusto molestias nemo sint quaerat. Error, doloribus dolor aliquam magni iure obcaecati maxime quisquam dignissimos sint molestiae nam incidunt repellat.</p>
                 <a href="nous-contacter"><button>Nous contacter</button></a>
             </div>

@@ -27,7 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: all .5s;
+    transition: .3s;
 }
 
 .title {
@@ -117,6 +117,12 @@ body {
     padding: 10px 15px;
     border-radius: 20px;
     cursor: pointer;
+    transition: .2s ease-in;
+}
+
+.product-card .popup-btn:hover {
+    background-color: #a98f67;
+    transition: .2s ease-in;
 }
 
 .product .popup-view.poped {
