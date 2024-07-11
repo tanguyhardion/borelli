@@ -32,7 +32,7 @@ export class AccordionService {
       ),
       new Accordion(
         'Vendôme',
-        '3 voix "a mano" 5 registres\n80 basses\nMerisier',
+        '3 voix "a mano" 5 registres\n80 basses\nMerisier'
       ),
       new Accordion(
         'Sully',
