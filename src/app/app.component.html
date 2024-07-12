@@ -13,3 +13,9 @@
   <accordion [accordion]="accordion"></accordion>
   }
 </div>
+
+@if (showScrollTopButton) {
+<button class="scroll-to-top" mat-fab (click)="scrollToTop()">
+  <mat-icon>arrow_upward</mat-icon>
+</button>
+}
