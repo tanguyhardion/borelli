@@ -8,75 +8,79 @@ import { Accordion } from '@models/accordion';
 export class AccordionService {
   private accordions: Accordion[] = [];
 
+  constructor() {
+    this.initAccordions();
+  }
+
   initAccordions() {
     this.accordions = [
       new Accordion(
         'Caprice',
-        '2 voix "Binci a mano" et 18 basses neutres\nHêtre laqué noir',
+        '2 voix "Binci a mano" et 18 basses neutres – Hêtre laqué noir',
         3.9
       ),
       new Accordion(
         'Fancy',
-        'Flat keyboard\nThree voices with treble stop, 8 basses\nSoft maple\nMarquetry : Rosewood',
+        'Flat keyboard – Three voices with treble stop, 8 basses – Soft maple – Marquetry : Rosewood',
         3.6
       ),
       new Accordion(
         'Melo',
-        'Deux voix "Binci a mano", 12 basses avec 1 registre\nAcajou',
+        'Deux voix "Binci a mano", 12 basses avec 1 registre – Acajou',
         3.9
       ),
       new Accordion(
         'Saulieu',
-        'Trois voix\nErable\nMarquetterie bois de rose',
+        'Trois voix – Erable – Marquetterie bois de rose',
         3.6
       ),
       new Accordion(
         'Vendôme',
-        '3 voix "a mano" 5 registres\n80 basses\nMerisier\n(5ème rang en option)'
+        '3 voix "a mano" 5 registres – 80 basses – Merisier – (5ème rang en option)'
       ),
       new Accordion(
         'Sully',
-        '19 touches 2 voix, 8 basses neutres\nErable',
+        '19 touches 2 voix, 8 basses neutres – Erable',
         2.6
       ),
       new Accordion(
         'Béguin',
-        'Deux voix "Binici a mano", 12 basses avec 1 registre\nAcajou',
+        'Deux voix "Binici a mano", 12 basses avec 1 registre – Acajou',
         4.0
       ),
       new Accordion(
         'Chambord',
-        'Trois voix "Binci a mano" 5 registres, 12 basses 1 registre\nErable\nMarqueterie bois de rose',
+        'Trois voix "Binci a mano" 5 registres, 12 basses 1 registre – Erable – Marqueterie bois de rose',
         4.95
       ),
       new Accordion(
         'Amboise',
-        '3 voix "Binci a mano" 1 registre, 12 basses 1 registre\nErable\nMarqueterie bois de rose',
+        '3 voix "Binci a mano" 1 registre, 12 basses 1 registre – Erable – Marqueterie bois de rose',
         4.1
       ),
       new Accordion(
         'Castelet',
-        '21 touches deux voix, 8 basses 1 registre\nErable\nMarqueterie bois de rose',
+        '21 touches deux voix, 8 basses 1 registre – Erable – Marqueterie bois de rose',
         3.1
       ),
       new Accordion(
         'Chenonceaux',
-        '2 voix "Binci a mano" 1 registre, 12 basses 1 registre\nErable\nMarqueterie bois de rose',
+        '2 voix "Binci a mano" 1 registre, 12 basses 1 registre – Erable – Marqueterie bois de rose',
         3.9
       ),
       new Accordion(
         'Cheverny',
-        '2 voix "Binci a mano" 1 registre, 12 basses 1 registre\nErable\nMarqueterie bois de rose',
+        '2 voix "Binci a mano" 1 registre, 12 basses 1 registre – Erable – Marqueterie bois de rose',
         4.1
       ),
       new Accordion(
         'Polyte',
-        '21 touches 2voix, 8 basses avec 1 registre\nAcajou',
+        '21 touches 2voix, 8 basses avec 1 registre – Acajou',
         3.6
       ),
       new Accordion(
         'Delight',
-        'Flat keyboard\n2 voices, 8 basses\n(Delight III = 3 voices with treble stop)'
+        'Flat keyboard – 2 voices, 8 basses – (Delight III = 3 voices with treble stop)'
       ),
     ];
   }

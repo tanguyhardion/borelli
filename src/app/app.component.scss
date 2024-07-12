@@ -1,0 +1,21 @@
+.accordion-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .chip {
+    cursor: pointer;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin: 32px;
+}

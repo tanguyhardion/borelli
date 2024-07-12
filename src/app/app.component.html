@@ -1,0 +1,15 @@
+<mat-chip-set class="accordion-navigation">
+  @for (accordion of accordions; track accordion) {
+  <mat-chip class="chip">
+    <a [href]="'#' + accordion.name">
+      {{ accordion.name }}
+    </a>
+  </mat-chip>
+  }
+</mat-chip-set>
+
+<div class="list">
+  @for (accordion of accordions; track accordion) {
+  <accordion [accordion]="accordion"></accordion>
+  }
+</div>

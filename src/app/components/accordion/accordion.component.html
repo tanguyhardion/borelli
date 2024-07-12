@@ -1,0 +1,16 @@
+<div class="accordion-item" [id]="accordion.name">
+  <div class="image-container">
+    <img [src]="getImageUrl(accordion.name)" [alt]="accordion.name" />
+  </div>
+  <div class="accordion-details">
+    <h1>{{ accordion.name }}</h1>
+    <p>{{ accordion.description }}</p>
+    @if (accordion.weight) {
+    <p>
+      Poids : <span class="bold">{{ accordion.weight }} kg</span>
+    </p>
+    } @else {
+    <p>Poids : <span class="bold">N/A</span></p>
+    }
+  </div>
+</div>
