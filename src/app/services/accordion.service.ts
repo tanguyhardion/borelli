@@ -32,7 +32,7 @@ export class AccordionService {
       ),
       new Accordion(
         'Vendôme',
-        '3 voix "a mano" 5 registres\n80 basses\nMerisier'
+        '3 voix "a mano" 5 registres\n80 basses\nMerisier\n(5ème rang en option)'
       ),
       new Accordion(
         'Sully',
@@ -111,14 +111,11 @@ Trois voix
 Erable
 Marquetterie bois de rose
 
-
 Vendôme
 3 voix "a mano" 5 registres
 80 basses
 Merisier
-
 (5ème rang en option)
-
 
 Sully
 19 touches 2 voix, 8 basses neutres
